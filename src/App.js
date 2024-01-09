@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ReactDOM from 'react-dom';
 
 function Square({ value, onSquareClick }) {
   return (
@@ -7,6 +8,8 @@ function Square({ value, onSquareClick }) {
     </button>
   );
 }
+
+
 
 function Board({ xIsNext, squares, onPlay }) {
   function handleClick(i) {
@@ -32,7 +35,13 @@ function Board({ xIsNext, squares, onPlay }) {
 
   return (
     <>
+      <div className="titulo"> 
+        <h1>TRIKI</h1>
+        
+      </div>
+      <div className='texto'> <h3>EL PRIMERO EN TENER TRES EN LINEA GANA</h3> </div>
       <div className="status">{status}</div>
+      <div className='tablero'>
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
@@ -47,6 +56,7 @@ function Board({ xIsNext, squares, onPlay }) {
         <Square value={squares[6]} onSquareClick={() => handleClick(6)} />
         <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
         <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
+      </div>
       </div>
     </>
   );
@@ -111,7 +121,9 @@ function calculateWinner(squares) {
       return squares[a];
     }
   }
-  return null;
+  return null;}
 
-  
-}
+
+
+
+

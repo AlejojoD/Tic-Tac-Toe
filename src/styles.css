@@ -1,26 +1,36 @@
+
+
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Bungee Spice', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Noto Serif Display', serif;
+  font-family: 'Roboto', sans-serif;
   margin: 20px;
   padding: 0;
+  background-color: #025464;
+}
+h1{
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 5px;
+  margin-bottom: 20px;
 }
 
-h1 {
-  margin-top: 0;
-  font-size: 22px;
-}
 
 h2 {
   margin-top: 0;
   font-size: 20px;
+
 }
 
 h3 {
   margin-top: 0;
-  font-size: 18px;
+  font-size: 34px;
 }
 
 h4 {
@@ -30,7 +40,7 @@ h4 {
 
 h5 {
   margin-top: 0;
-  font-size: 14px;
+  font-size: 50px;
 }
 
 h6 {
@@ -50,42 +60,98 @@ ul {
   box-sizing: border-box;
 }
 
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
+.game{
+  display: flex;
+  flex-direction: column;
+}
+.titulo{
+  display: flex;
+  justify-content: center;
+  font-size:85px;
+  border-bottom: 10px;
+  color: #6DA4AA;
+  font-family: 'Bungee Spice', sans-serif;
+  
+  
 }
 
+.texto{
+  display: flex;
+  justify-content: center;
+  color: #6DA4AA;
+  margin-bottom: 60px;
+  font-family: 'Bungee Spice', sans-serif;
+  margin-bottom: 5px;
+  
+}
 .square {
-  background: #e03a3a;
-  border: 1px solid #c52020;
+  background: #025464;
+  border:  10px solid #E55807;
+  border-radius: 20%;
   float: left;
-  font-size: 24px;
+  font-size: 70px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 120px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
-  color: goldenrod;
+  width: 120px;
+  color: #FFB000;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3);
+  margin: 5px; 
+  padding: 20px;
+
+  
 }
+
+.square:hover{
+  transform: scale(1.1);
+} 
 
 .board-row:after {
   clear: both;
   content: "";
   display: table;
+  margin: 0 auto;
+  align-items: center;
+  
 }
-
+.tablero{
+  display: table;
+  margin: 0 auto;
+}
 .status {
   margin-bottom: 10px;
-}
-.game {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  font-size: 25px;
+  color: #647D87;
+  font-size: 28px;
+  font-family: 'Bungee Spice', sans-serif;
 }
 
+
 .game-info {
-  margin-left: 20px;
+  margin-left: 2px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Bungee Spice', sans-serif;
 }
+
+.game-info ol li button{
+  color:#FAEF9B;
+  background-color: #025464;
+  border: 1px solid #E55807;
+  height: 40px;
+  width: 600px;
+  font-size: 23px;
+  font-family: 'Bungee Spice', sans-serif;
+  transition: transform 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.game-info ol li button:hover{
+  transform: scale(1.1);}
