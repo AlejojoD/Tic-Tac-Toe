@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ReactDOM from 'react-dom';
+import triki from './triki.jpg';
 
 function Square({ value, onSquareClick }) {
   return (
@@ -95,6 +96,7 @@ export default function Game() {
   return (
     <div className="game">
       <div className="game-board">
+        <img className='triki' src={triki}></img>
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className="game-info">
