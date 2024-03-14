@@ -16,6 +16,8 @@ React: Used for the frontend development, providing a dynamic and efficient user
 JavaScript (ES6+): Handles the game logic, including win detection and move recording.
 CSS: Styles the user interface, ensuring a visually appealing and intuitive design.
 
+Acces: https://glowing-youtiao-49afcf.netlify.app/
+
 Juego de Tic Tac Toe 
 Este proyecto es un desafío de React completado por [Tu Nombre], que implementa un juego de Tic Tac Toe para dos jugadores. Utiliza React para el frontend, JavaScript para la lógica del juego y CSS para el estilo. Una característica única de este juego es la capacidad de guardar y revisar el historial del juego, lo que permite a los jugadores volver en el tiempo para ver cada movimiento.
 
@@ -31,3 +33,5 @@ Tecnologías Utilizadas
 React: Utilizado para el desarrollo del frontend, proporcionando una interfaz de usuario dinámica y eficiente.
 JavaScript (ES6+): Maneja la lógica del juego, incluida la detección de victorias y el registro de movimientos.
 CSS: Estiliza la interfaz de usuario, asegurando un diseño visualmente atractivo e intuitivo.
+
+acceso: https://glowing-youtiao-49afcf.netlify.app/
