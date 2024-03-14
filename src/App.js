@@ -95,8 +95,9 @@ export default function Game() {
 
   return (
     <div className="game">
+       <img className='triki' src={triki}></img>
       <div className="game-board">
-        <img className='triki' src={triki}></img>
+       
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className="game-info">
